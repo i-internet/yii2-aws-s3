@@ -40,7 +40,8 @@ class Service extends Component implements ServiceInterface
     public $defaultPresignedExpiration = '';
 
     /** @var array S3Client config */
-    protected $clientConfig = ['version' => 'latest'];
+    protected $clientConfig = ['version' => 'latest',  'suppress_php_deprecation_warning' => true];
+
 
     /** @var array */
     private $components = [];
